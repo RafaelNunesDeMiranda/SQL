@@ -1,0 +1,7 @@
+	-- #Alter login without check policy
+  alter login usDW with check_policy = off, check_expiration = off 
+	go
+	alter login usDW with password = 'usDW' 
+	go
+	alter login usDW with check_policy = on, check_expiration = on 
+	go
